@@ -33,18 +33,18 @@ export function MainNav() {
             pathname?.startsWith("/docs/components") &&
               !pathname?.startsWith("/docs/component/chart")
               ? "text-foreground"
-              : "text-foreground/60",
+              : "text-foreground/60"
           )}
         >
           Demo
         </Link>
         <Link
-          href="/examples"
+          href="/usage"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/examples")
+            pathname?.startsWith("/usage")
               ? "text-foreground"
-              : "text-foreground/60",
+              : "text-foreground/60"
           )}
         >
           Usage
@@ -55,7 +55,7 @@ export function MainNav() {
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/colors")
               ? "text-foreground"
-              : "text-foreground/60",
+              : "text-foreground/60"
           )}
         >
           Pricing

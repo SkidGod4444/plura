@@ -22,7 +22,7 @@ export function SiteHeader() {
                   buttonVariants({
                     variant: "ghost",
                   }),
-                  "h-8 w-8 px-0",
+                  "h-8 w-8 px-0"
                 )}
               >
                 <Icons.gitHub className="h-4 w-4" />
@@ -35,7 +35,7 @@ export function SiteHeader() {
                   buttonVariants({
                     variant: "ghost",
                   }),
-                  "h-8 w-8 px-0",
+                  "h-8 w-8 px-0"
                 )}
               >
                 <Icons.twitter className="h-3 w-3 fill-current" />
