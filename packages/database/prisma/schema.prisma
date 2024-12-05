@@ -17,6 +17,7 @@ model User {
   image         String?
   createdAt     DateTime
   updatedAt     DateTime
+  isOnboarding  Boolean   @default(false)
   sessions      Session[]
   accounts      Account[]
 

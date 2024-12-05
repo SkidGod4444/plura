@@ -3,7 +3,7 @@ import { prisma } from "@repo/db";
 import { auth } from "@repo/auth";
 
 const app = new Hono()
-  .get("/self", async (c) => {
+   .get("/self", async (c) => {
     const currentUser = await auth.api.getSession({
       headers: c.req.raw.headers,
     });
@@ -23,6 +23,7 @@ const app = new Hono()
         id: currentUser.user.id,
       },
     });
+    
     return c.json(
       {
         user,

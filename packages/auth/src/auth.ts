@@ -18,6 +18,17 @@ export const auth = betterAuth({
   }),
   secret: process.env.BETTER_AUTH_SECRET,
   plugins: [multiSession()],
+  user: {
+    additionalFields:{
+      isOnboarding: {
+        type: "boolean",
+        nullable:false,
+        required:true,
+        input:false,
+        defaultValue: false
+      }
+    }
+  },
   emailAndPassword: {
     enabled: true,
     autoSignIn: true,
