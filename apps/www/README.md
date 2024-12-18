@@ -47,7 +47,6 @@ To set up your environment for the project, follow these steps:
     - Access your application at [Upastash](http://localhost:3001/api/health).
    
 ## Need Help?
-
 - Check our [Contributing Guide](../../CONTRIBUTING.md)
 - Join our [Discord Community](https://discord.gg/XtybuwJV)
 
