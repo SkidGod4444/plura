@@ -2,5 +2,10 @@
     "prefix" : "$",
     "owner" : ["1088411799960948736"],
     "support_server_link" : "https://l.devwtf.in/plura-dc",
-    "guildLogs" : "1001490200503009311"
+    "guildLogs" : "1001490200503009311",
+    
+    "default_color": "#000000",
+    "danger_color": "",
+    "success_color": ""
+
 }

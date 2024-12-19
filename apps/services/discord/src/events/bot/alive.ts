@@ -5,10 +5,10 @@ export default async function alive(client: Client) {
         console.log(`${client.user?.username} is ready! 🤖`)
         client.user?.setPresence({
             activities: [{
-                name: `${client.config?.prefix}help`,
+                name: `${client.config?.prefix}help | plura.pro`,
                 type: 3,
             }],
-            status: "dnd"
+            status: "idle"
         });
     });
 }

@@ -4,8 +4,8 @@ import { readdirSync } from 'fs';
 import { config } from "./configs/config";
 import configJSON from "./configs/config.json";
 
-const CommandsTable = new AsciiTable3().setHeading("Message Commands", "Status");
-const EventsTable = new AsciiTable3().setHeading("Client Events", "Status");
+export const CommandsTable = new AsciiTable3().setHeading("Message Commands", "Status");
+export const EventsTable = new AsciiTable3().setHeading("Client Events", "Status");
 
 const client = new Client({
     intents: [
@@ -32,7 +32,7 @@ const client = new Client({
 client.commands = new Collection();
 client.config = configJSON;
 
-const loadCommands = (client: Client) => {
+export const loadCommands = (client: Client) => {
     readdirSync("./src/commands/").forEach(d => {
         const commandFiles = readdirSync(`./src/commands/${d}`).filter(f => f.endsWith('.js') || f.endsWith('.ts'));
         for (const f of commandFiles) {
@@ -40,38 +40,38 @@ const loadCommands = (client: Client) => {
                 const cmd = require(`../src/commands/${d}/${f}`).default; // Default export
                 if (cmd?.name) {
                     client.commands.set(cmd.name, cmd);
-                    CommandsTable.addRow(cmd.name, "✅");
+                    CommandsTable.addRow(`${d}.${f.split(".")[0]}`, "✅");
                 }
             } catch (err) {
                 console.error(`Error loading command file ${f}:`, err);
-                CommandsTable.addRow(f.split(".")[0], "❌");
+                CommandsTable.addRow(`${d}.${f.split(".")[0]}`, "❌");
             }
         }
     });
     setTimeout(() => {
         console.log(CommandsTable.toString());
-    }, 5000 * readdirSync("./src/commands/").length);
+    }, 3000 * readdirSync("./src/commands/").length);
 };
 
-const loadEvents = (client: Client) => {
+export const loadEvents = (client: Client) => {
     readdirSync("./src/events/").forEach(d => {
         const eventFiles = readdirSync(`./src/events/${d}`).filter(f => f.endsWith('.js') || f.endsWith('.ts'));
         for (const f of eventFiles) {
             try {
                 const event = require(`../src/events/${d}/${f}`).default; // Default export
                 event(client);
-                const eventName = f.split(".")[0];
+                const eventName = `${d}.${f.split(".")[0]}`;
                 EventsTable.addRow(eventName, "✅");
             } catch (err) {
                 console.error(`Error loading event file ${f}:`, err);
-                const eventName = f.split(".")[0];
+                const eventName = `${d}.${f.split(".")[0]}`;
                 EventsTable.addRow(eventName, "❌");
             }
         }
     });
     setTimeout(() => {
         console.log(EventsTable.toString());
-    }, 5000 * readdirSync("./src/events/").length);
+    }, 3000 * readdirSync("./src/events/").length);
 };
 
 const webhook = new WebhookClient({ url: config.WEBHOOK_ERROR_LOGGING });
@@ -86,8 +86,8 @@ process.on("uncaughtException", (er) => {
     webhook.send({ embeds: [new EmbedBuilder().setColor(`#2f3136`).setDescription(`\`\`\`ts\n${er}\`\`\``)] });
 });
 const start = async () => {
-    await loadCommands(client);
-    await loadEvents(client);
+    loadCommands(client);
+    loadEvents(client);
     client.login(config.DISCORD_TOKEN);
 };
 
