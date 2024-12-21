@@ -51,6 +51,16 @@ UPSTASH_REDIS_REST_TOKEN=
 UPSTASH_REDIS_REST_URL=
 ```
 
-## License
+## 📞 Contact
 
-Copyright 2024 Plura.
+- Project Link: [GitHub Repository](https://github.com/Skidgod4444/plura)
+- Discord: [Discord](https://discord.gg/plura)
+---
+
+### Contributing
+
+<a href="https://github.com/SkidGod4444/plura/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SkidGod4444/plura" />
+</a>
+
+**Engineered with ❤️ by the Plura Team**

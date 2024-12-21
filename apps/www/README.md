@@ -46,8 +46,17 @@ To set up your environment for the project, follow these steps:
 
     - Access your application at [Upastash](http://localhost:3001/api/health).
    
-## Need Help?
+## 📞 Contact
 
-- Check our [Contributing Guide](../../CONTRIBUTING.md)
-- Join our [Discord Community](https://discord.gg/XtybuwJV)
+- Project Link: [GitHub Repository](https://github.com/Skidgod4444/plura)
+- Discord: [Discord](https://discord.gg/plura)
+---
+
+### Contributing
+
+<a href="https://github.com/SkidGod4444/plura/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SkidGod4444/plura" />
+</a>
+
+**Engineered with ❤️ by the Plura Team**
 

@@ -1,81 +1,54 @@
-# Turborepo starter
+# Plura
 
-This is an official starter Turborepo.
+![Plura Logo](/apps/www/public/images/plura-logo.png)
 
-## Using this example
+## 👀 What is this?
 
-Run the following command:
+Plura is a SaaS platform that redefines AI-powered communication and interaction. Our innovative solution allows you to create intelligent "brains" - custom AI agents that can be trained with specific information and connected across multiple communication channels.
 
-```sh
-npx create-turbo@latest
-```
+### 🫣Whats inside?
+  Coming soon 
 
-## What's inside?
+## 🔑 Key Features
+- 🔗**Multi-Channel Connectivity**: Connect agents to websites, WhatsApp, Discord, Instagram, and more
+- 🧠**Custom AI Training**: Easily teach your AI agents with specific, information
+- 💬 **Chat with Collections**: Interact with specific knowledge bases.
+- 🔍 **Powerful Search**: Quickly find any saved information.
+- 🏠 **Self Hostable**: Open source and easy to deploy locally.
 
-This Turborepo includes the following packages/apps:
 
-### Apps and Packages
+## 🏗 System Architecture
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+-Coming soon
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 💻 Tech Stack
 
-### Utilities
+Coming soon 
 
-This Turborepo has some additional tools already setup for you:
+## 🤝 Contributing
+Contributions are very welcome! A contribution can be as small as a ⭐ or even finding and creating issues.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- for joining our community, please Contact [Saidev Dhal](https://github.com/Skidgod4444/)
+- for contributing to our code, please follow the contribution guidelines below
 
-### Build
+### Contribution Guidelines 
+- Go check out [Contributing.md](https://github.com/SkidGod4444/plura/blob/main/CONTRIBUTING.md)
 
-To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
-pnpm build
-```
+## 📄 Licensing
 
-### Develop
+Distributed under the MIT License.
 
-To develop all apps and packages, run the following command:
+## 📞 Contact
 
-```
-cd my-turborepo
-pnpm dev
-```
+- Project Link: [GitHub Repository](https://github.com/Skidgod4444/plura)
+- Discord: [Discord](https://discord.gg/plura)
+---
 
-### Remote Caching
+### Contributing
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+<a href="https://github.com/SkidGod4444/plura/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SkidGod4444/plura" />
+</a>
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+**Engineered with ❤️ by the Plura Team**
